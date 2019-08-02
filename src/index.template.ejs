@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <%= require('ejs-loader!./fragments/head.ejs')() %>
+  </head>
+  <body>
+      <%= require('ejs-loader!./fragments/arrow-nav.ejs')() %>
+    <div class="container">
+      <%= require('ejs-loader!./fragments/backgrounds.ejs')() %>
+      
+      <%= require('ejs-loader!./fragments/navigation.ejs')() %>
+      
+      <%= require('ejs-loader!./fragments/intro.ejs')() %>
+      
+      <%= require('ejs-loader!./fragments/overview.ejs')() %>
+
+      <%= require('ejs-loader!./fragments/what-we-do.ejs')() %>
+
+      <%= require('ejs-loader!./fragments/location.ejs')() %>
+
+      <%= require('ejs-loader!./fragments/gallery.ejs')() %>
+
+      <%= require('ejs-loader!./fragments/contact.ejs')() %>
+
+      <%= require('ejs-loader!./fragments/footer.ejs')() %>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

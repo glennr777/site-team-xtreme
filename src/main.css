@@ -90,7 +90,8 @@
 
       &[slot*="4"],
       &[slot*="5"],
-      &[slot*="6"] {
+      &[slot*="6"],
+      &[slot*="7"] {
         background-image: url('./images/shelter_01_1.jpg');
       }
     }
@@ -194,7 +195,7 @@
         & #sectionNav {
           padding: 10px;
           display: block;
-          flex: 0 0 auto;
+          flex: 0 1 auto;
           margin: auto 0;
           & a {
             font-size: 0.9em;
@@ -252,6 +253,7 @@
           display: flex;
           font-size: 1.85em;
           line-height: var(--logo);
+          white-space: nowrap;
           @media(--small-device) {
             font-size: 1.5em;
             line-height: var(--logo-small);
@@ -384,6 +386,27 @@
               }
             }
           }
+          & blockquote {
+            margin: 0;
+            & .quote {
+              display: inline-block;
+              font-style: italic;
+              &:before {
+                content: '"';
+              }
+              &:after {
+                content: '"';
+              }
+            }
+            & .quoting {
+              display: inline-block;
+              margin-top: 0.75em;
+              font-weight: bold;
+              &:before {
+                content: '';
+              }
+            }
+          }
         }
       }
 
@@ -410,7 +433,9 @@
         }
       }
 
-      &#overview, &#location > div {
+      &#overview,
+      &#location > div,
+      &#testimonials > div {
         color: var(--clr-3);
         background-color: var(--clr-bg2);
       }

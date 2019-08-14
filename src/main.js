@@ -30,7 +30,7 @@ require('simplelightbox');
     const thisY = window.scrollY;
     const innerH = window.innerHeight;
     const slot = ~~ (thisY / innerH);
-    const slots = ['#intro', '#overview', '#whatwedo', '#location', '#gallery', '#contact'];
+    const slots = ['#intro', '#overview', '#whatwedo', '#location', '#testimonials', '#gallery', '#contact'];
     if (thisY) $tagline.attr({ 'data-css': `${thisY} / ${innerH}` });
 
     if (lastY > thisY) {

@@ -388,6 +388,7 @@
           }
           & blockquote {
             margin: 0;
+            padding: 20px 0;
             & .quote {
               display: inline-block;
               font-style: italic;

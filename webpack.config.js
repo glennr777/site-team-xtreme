@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'bundle.js'
+    filename: '[hash]-bundle.js'
   },
   module: {
     rules: [

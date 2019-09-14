@@ -404,7 +404,11 @@
               margin-top: 0.75em;
               font-weight: bold;
               &:before {
-                content: '';
+                content: '¬';
+                display: inline-block;
+                color: var(--clr-4);
+                transform: rotate(180deg);
+                margin-right: 5px;
               }
             }
           }
